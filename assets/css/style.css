@@ -1,29 +1,33 @@
 body {
-    font-family: 'Amatic SC', cursive;
-    font-weight 700;
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: black;
+	font-family: 'Andika', sans-serif;
+    font-size: 1rem;
+    color: #555;
     line-height: 30px;
     text-align: center;
 }
+
 
 strong { font-weight: 600; }
 
 a, a:hover, a:focus { color: #9b59b6; text-decoration: none; transition: all .3s; }
 
+::placeholder {
+	font-family: 'Amatic SC', cursive;
+	font-weight: 700;
+  }
+
 h1, h2 {
+	font-family: 'Amatic SC', cursive;
 	margin-top: 10px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 38px;
-    font-weight: 300;
+	font-size: 2.5rem;
+    font-weight: 700;
     color: #555;
     line-height: 50px;
 }
 
 h3 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 22px;
+	font-family: 'Amatic SC', cursive;
+	font-size: 1.5rem;
     font-weight: 300;
     color: #555;
     line-height: 30px;
@@ -51,6 +55,12 @@ img { max-width: 100%; }
 
 .section-container-gray-bg {
 	background: #f8f8f8;
+}
+
+.section-container-web-dev-bg {
+	background-image: url(../img/web-dev-bg.jpg) !important;
+	background-position: center !important;
+	background-size: cover !important;
 }
 
 .section-container-image-bg, 
@@ -112,26 +122,9 @@ img { max-width: 100%; }
 	padding: 0 28px;
 	background: #333;
 	background: rgba(0, 0, 0, 0.2);
-	border: 0;
-	font-size: 15px;
-    font-weight: 600;
-    line-height: 48px;
-    color: #fff;
-    border-radius: 4px;
-    transition: all .3s;
-}
-.btn-link-2:hover, .btn-link-2:focus, .btn-link-2:active, .btn-link-2:active:focus,
-.btn-link-2.btn-primary:not(:disabled):not(.disabled):active,
-.btn-link-2.btn-primary:not(:disabled):not(.disabled):active:focus {
-	background: #333; background: rgba(0, 0, 0, 0.4); outline: 0; color: #fff; box-shadow: none;
-}
-
-.btn-link-3 {
-	display: inline-block;
-	height: 50px;
-	margin: 0 5px;
-	padding: 0 28px;
-	background: none;
+	border: 0;::placeholder {
+		color: red;
+	  }
 	border: 0;
 	border-bottom: 2px solid #9b59b6;
 	font-size: 15px;
@@ -166,6 +159,7 @@ img { max-width: 100%; }
 /***** Top menu *****/
 
 .navbar {
+	font-family: 'Amatic SC', cursive;
 	background: #444;
 	-o-transition: all .6s; -moz-transition: all .6s; -webkit-transition: all .6s; -ms-transition: all .6s; transition: all .6s;
 	backface-visibility: hidden;
@@ -190,7 +184,7 @@ img { max-width: 100%; }
 /***** Top content *****/
 
 .top-content {
-    padding: 210px 0;
+    padding: 310px 0;
 }
 
 .top-content .text {
