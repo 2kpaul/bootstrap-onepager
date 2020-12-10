@@ -168,7 +168,13 @@ img { max-width: 100%; }
 
 .navbar-dark .navbar-nav { font-size: 1.5rem; color: #fff; font-weight: 600; }
 .navbar-dark .navbar-nav .nav-link { color: #fff; color: rgba(255, 255, 255, 0.8); border: 0; }
-.navbar-dark .navbar-nav .nav-link:hover { color: #fff; }
+.navbar-dark .navbar-nav .nav-link:hover { color: #fff;
+	-webkit-animation-duration: 1s;
+  	animation-duration: 1s;
+  	-webkit-animation-fill-mode: both;
+  	animation-fill-mode: both;
+	-webkit-animation-name: tada;
+	animation-name: tada; }
 .navbar-dark .navbar-nav .nav-link:focus { color: #fff; outline: 0; }
 
 .navbar-expand-md .navbar-nav .nav-link { padding-left: 1rem; padding-right: 1rem; }
